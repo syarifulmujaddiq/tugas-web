@@ -1,8 +1,5 @@
 const http = require('http');
 
-const hostname = '129.213.54.196';
-const port = '4002';
-
 const server = http.createServer((request, response) =>{
     console.log(request.url);
     console.log(request.headers);
@@ -38,7 +35,7 @@ const server = http.createServer((request, response) =>{
 
 });
 
-server.listen(port, hostname, () =>{
-    console.log(`sever listen ${hostname} ${port}`);
+server.listen(4002, () =>{
+    console.log(`sever listen http://http://129.213.54.196:4002`);
     
 });
